@@ -47,10 +47,11 @@ button {
 
 input,
 textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #E5E7EB;
   padding: 10px;
   box-sizing: border-box;
 }
+
 
 ul,
 ol {
@@ -64,7 +65,7 @@ table {
 }
 
 button,
-input,
+
 select,
 textarea {
   appearance: none;
@@ -154,6 +155,8 @@ input{
   border-radius: 10px;
 }
 
+
+
 .small-container {
   display: flex;
   gap: 2rem;
@@ -172,4 +175,28 @@ button {
   border-radius: 10px;
   font-size: 20px;
   background-color: rgb(244 237 26 /0.7);
+}
+
+h5 {
+  margin: 30px;
+  margin-left: 40px;
+}
+
+a {
+  color: rgb(111 113 4 /0.9);
+  font-size: 20px;
+}
+
+input[type="password"]:invalid{
+  border: 1px solid red
+}
+
+
+
+input:not([type="password"]) {
+  outline-color: yellow;
+}
+
+input[type="password"]{
+  outline-color: red;
 }
